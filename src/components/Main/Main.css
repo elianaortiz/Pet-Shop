@@ -1,0 +1,16 @@
+#mainPhoto{
+    background-image: url(/src/assets/img/bowl.jpg);
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-titles {
+    text-align: right;
+    font-size: 25px;
+    position: relative;
+    top: 180px;
+    right: 82px;
+}
