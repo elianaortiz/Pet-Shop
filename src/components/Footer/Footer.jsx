@@ -1,6 +1,8 @@
+import "./Footer.css"
+
 function Footer() {
     return(
-        <div>
+        <div className="footer">
             <div>
                 <img src="/src/assets/img/localida.svg"/>
                 <p>Localidad</p>
