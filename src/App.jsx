@@ -9,22 +9,21 @@ import { ThemeProvider, createTheme } from '@mui/material'
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#99ebda",
-      light: "#d7f7f1",
-      dark: "#00c8aa"
-    },
-
+        main: "#fdb953",
+        light: "#fdcd83",
+        dark: "#fd9b13",
+        darker: "#e35608"
+      }, 
+      
     secondary: {
-      main: "#fdb953",
-      light: "#fdcd83",
-      dark: "#fd9b13",
-      darker: "#e35608"
-    },
+        main: "#99ebda",
+        light: "#d7f7f1",
+        dark: "#00c8aa"
+      },
   }
 });
 
 function App() {
-
   return (
     <>
       <ThemeProvider theme={theme}>

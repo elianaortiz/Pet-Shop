@@ -8,8 +8,6 @@ import PetsIcon from '@mui/icons-material/Pets';
 import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
-import "./Navbar.css"
-
 import PersonIcon from '@mui/icons-material/Person';
 
 
@@ -56,7 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Navbar(){
     return (
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static" color='secondary'>
+          <AppBar position="static" color='primary'>
             <Toolbar>
               <IconButton
                 size="large"
@@ -78,25 +76,21 @@ function Navbar(){
                 />
               </Search>
 
-                <Button sx={{mr: 4, ml: 4, color: 'secondary.darker'}}>
+                <Button sx={{mr: 4, ml: 4, color: 'primary.darker'}}>
                     <Typography variant='subtitle1'>Categorías</Typography>
                 </Button>
 
-                <Button sx={{mr: 4, color: 'secondary.darker'}}>
+                <Button sx={{mr: 3, color: 'primary.darker'}}>
                 <Typography variant='subtitle1'>Ofertas</Typography>
                 </Button>
 
-                <Button sx={{mr: 4, color: 'secondary.darker'}}>
-                <Typography variant='subtitle1'>Nosotros</Typography>
-                </Button>
-
-                <Button sx={{mr: 4, color: 'secondary.darker'}}>
+                <Button sx={{ color: 'primary.darker'}}>
                 <Typography variant='subtitle1'>FAQs</Typography>
                 </Button>
                
               <Button endIcon={<PersonIcon/>} variant= 'contained'
                 sx={{
-                    bgcolor:'secondary.dark',
+                    bgcolor:'primary.dark',
                     position:'absolute',
                     left:'90%'}}>
                 Login
