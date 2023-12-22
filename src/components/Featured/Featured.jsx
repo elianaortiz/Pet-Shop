@@ -6,9 +6,8 @@ import { Box } from "@mui/system";
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
-    padding: theme.spacing(1),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
   }));
 
 function Featured() {
@@ -17,7 +16,11 @@ function Featured() {
             <div>
                 <h2>Productos destacados</h2>
 
-                <Grid container gap={12} position="static" justifyContent="center"
+                <Grid 
+                    container gap={12} 
+                    position="static"
+                    direction="row"
+                    justifyContent="space-around"
                     sx={{
                         position: 'relative',
                         top: "20px"}}>

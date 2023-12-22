@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Main from './components/Main/Main'
 import Navbar from './components/Navbar/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material'
+import Categories from './components/Categories/Categories'
 
 const theme = createTheme({
   palette: {
@@ -29,6 +30,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar/>
         <Main/>
+        <Categories/>
         <Featured/>
         <Form/>
         <Footer/>
