@@ -10,11 +10,14 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.primary,
   }));
 
-function Featured() {
+function Popular() {
     return (
-        <Box>
+        <Box sx={{
+            position: "relative",
+            top: "50px"
+        }}>
             <div>
-                <h2>Productos destacados</h2>
+                <h2>Popular picks</h2>
 
                 <Grid 
                     container gap={12} 
@@ -47,4 +50,4 @@ function Featured() {
     )
 }
 
-export default Featured;
+export default Popular;

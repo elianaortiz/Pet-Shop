@@ -7,27 +7,33 @@ function Form() {
         <Box
         component="form"
         autoComplete="off"
+        sx={{
+            position: 'relative',
+            top: '100px',
+            marginBottom: '120px',
+            display: 'flex',
+            justifyContent: 'space-between',
+        }}  
         >
-            <div className="form">
-                <h2>Subscribite a nuestro Newsletter</h2>
+                <h3>Subscribe to our Newsletter</h3>
 
-                <div className="datos-container">
-                    <TextField className="datos"
+                <div className="data-container">
+                    <TextField className="data"
+                    label= "Name"
                     variant="standard" 
-                    placeholder="Nombre" 
                     margin="normal"
-                    color="secondary"/>
+                    color="primary"/>
 
-                    <TextField className="datos"
+                    <TextField className="data"
+                    label="Email address"
                     variant="standard"
-                    placeholder="Correo electrónico" 
                     margin="normal"
-                    color="secondary"/>
+                    color="primary"/>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Subscribe</button>
 
                 </div>
-            </div>
+           
         </Box>
     )
 }

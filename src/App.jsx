@@ -1,11 +1,6 @@
 import './App.css'
-import Form from './components/Form/Form'
-import Featured from './components/Featured/Featured'
-import Footer from './components/Footer/Footer'
-import Main from './components/Main/Main'
-import Navbar from './components/Navbar/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material'
-import Categories from './components/Categories/Categories'
+import Navigation from './routes/Navigation'
 
 const theme = createTheme({
   palette: {
@@ -28,12 +23,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Navbar/>
-        <Main/>
-        <Categories/>
-        <Featured/>
-        <Form/>
-        <Footer/>
+        <Navigation/>
       </ThemeProvider>
     </>
   )
